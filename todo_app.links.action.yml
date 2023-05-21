@@ -1,0 +1,5 @@
+todo_app.link_add_task:
+  route_name: todo_app.add
+  title: 'Add Task'
+  appears_on:
+    - todo_app.manage_tasks

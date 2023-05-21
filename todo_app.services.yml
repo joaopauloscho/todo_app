@@ -1,0 +1,4 @@
+services:
+  todo_app.repository:
+    class: Drupal\todo_app\TodoAppRepository
+    arguments: ['@database', '@messenger']

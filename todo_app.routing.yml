@@ -1,0 +1,112 @@
+system.todo_app:
+  path: '/admin/todo_app'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Todo App'
+  requirements:
+    _permission: 'access_own_tasks'
+system.todo_app_settings:
+  path: '/admin/todo_app/settings'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Todo App Settings'
+  requirements:
+    _permission: 'access administration pages'
+#todo_app.list:
+#  path: '/admin/todo-app/my-tasks'
+#  defaults:
+#    _title: 'My Tasks'
+#    _controller: '\Drupal\todo_app\Controller\TodoAppController::buildList'
+#  requirements:
+#    _permission: 'access_own_tasks'
+todo_app.manage_tasks:
+  path: '/admin/todo-app/manage-tasks'
+  defaults:
+    _title: 'Manage Tasks'
+    _form: 'Drupal\todo_app\Form\ManageTasksForm'
+  requirements:
+    _permission: 'access_own_tasks'
+todo_app.add:
+  path: '/admin/todo-app/add-task'
+  defaults:
+    _title: 'Add entry'
+    _form: '\Drupal\todo_app\Form\AddTasksForm'
+  requirements:
+    _permission: 'access_own_tasks'
+todo_app.update:
+  path: '/admin/todo-app/update-task'
+  defaults:
+    _title: 'Update entry'
+    _form: '\Drupal\todo_app\Form\TasksUpdateForm'
+  requirements:
+    _permission: 'access_own_tasks'
+todo_app.delete_confirm:
+  path: '/admin/todo-app/delete-task'
+  defaults:
+    _title: 'Delete task'
+    _form: 'Drupal\todo_app\Form\DeleteTasksConfirmForm'
+  requirements:
+    _permission: 'access_own_tasks'
+todo_app.manage_priorities:
+  path: '/admin/todo-app/manage-priorities'
+  defaults:
+    _title: 'Manage priorities'
+    _form: 'Drupal\todo_app\Form\ManagePrioritiesForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.manage_statuses:
+  path: '/admin/todo-app/manage-statuses'
+  defaults:
+    _title: 'Manage statuses'
+    _form: 'Drupal\todo_app\Form\ManageStatusesForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.manage_categories:
+  path: '/admin/todo-app/manage-categories'
+  defaults:
+    _title: 'Manage categories'
+    _form: 'Drupal\todo_app\Form\ManageCategoriesForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.delete_priorities_confirm:
+  path: '/admin/todo-app/delete-priority'
+  defaults:
+    _title: 'Delete priority'
+    _form: 'Drupal\todo_app\Form\DeletePrioritiesConfirmForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.delete_statuses_confirm:
+  path: '/admin/todo-app/delete-status'
+  defaults:
+    _title: 'Delete status'
+    _form: 'Drupal\todo_app\Form\DeleteStatusesConfirmForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.delete_categories_confirm:
+  path: '/admin/todo-app/delete-category'
+  defaults:
+    _title: 'Delete category'
+    _form: 'Drupal\todo_app\Form\DeleteCategoriesConfirmForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.update_priorities:
+  path: '/admin/todo-app/update-priority'
+  defaults:
+    _title: 'Update entry'
+    _form: 'Drupal\todo_app\Form\PrioritiesUpdateForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.update_statuses:
+  path: '/admin/todo-app/update-status'
+  defaults:
+    _title: 'Update entry'
+    _form: 'Drupal\todo_app\Form\StatusesUpdateForm'
+  requirements:
+    _permission: 'access administration pages'
+todo_app.update_categories:
+  path: '/admin/todo-app/update-category'
+  defaults:
+    _title: 'Update entry'
+    _form: 'Drupal\todo_app\Form\CategoriesUpdateForm'
+  requirements:
+    _permission: 'access administration pages'

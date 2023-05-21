@@ -1,0 +1,43 @@
+todo_app.system:
+  title: 'To do App'
+  route_name: system.todo_app
+  parent: system.admin
+  weight: -99
+todo_app.my_tasks:
+  title: 'My Tasks'
+  route_name: todo_app.manage_tasks
+  parent: todo_app.system
+  description: 'My List of tasks to do'
+  weight: 0
+todo_app.add_task:
+  title: 'Add Task'
+  route_name: todo_app.add
+  parent: todo_app.system
+  description: 'Add task'
+  weight: 1
+
+# Settings
+todo_app.settings:
+  title: 'Settings'
+  route_name: system.todo_app_settings
+  parent: todo_app.system
+  description: 'To do App Settings'
+  weight: 2
+todo_app.manage_priorities:
+  title: 'Manage Priorities'
+  route_name: todo_app.manage_priorities
+  parent: todo_app.settings
+  description: 'Manage Priorities for to do tasks'
+  weight: 0
+todo_app.manage_statuses:
+  title: 'Manage Statuses'
+  route_name: todo_app.manage_statuses
+  parent: todo_app.settings
+  description: 'Manage Statuses for to do tasks'
+  weight: 1
+todo_app.manage_categories:
+  title: 'Manage Categories'
+  route_name: todo_app.manage_categories
+  parent: todo_app.settings
+  description: 'Manage Categories for to do tasks'
+  weight: 2

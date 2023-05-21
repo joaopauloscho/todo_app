@@ -1,0 +1,5 @@
+name: To Do App
+type: module
+description: Where users can log their to do tasks
+package: Custom
+core_version_requirement: ^9 || ^10
